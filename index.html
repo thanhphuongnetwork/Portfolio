@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thanh Phuong | Data & Automation Portfolio</title>
+  <meta name="description"
+    content="Data & BI Professional with 4+ years designing scalable data architectures, automation workflows, and AI-assisted operations. Power BI, SQL, Power Automate." />
+  <meta name="keywords"
+    content="Data Analyst, BI Analyst, Power BI, SQL, Automation, Power Automate, E-commerce, Data Architecture" />
+  <meta property="og:title" content="Thanh Phuong | Data & BI Professional" />
+  <meta property="og:description" content="Transforming complex operational data into actionable business insights." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+</head>
+
+<body>
+
+  <!-- ── Navigation ──────────────────────────────────────────── -->
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#home" data-nav="home" aria-label="Thanh Phương home">
+        <span>TP</span> Thanh Phương
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a class="nav-link active" data-nav="home" href="#home" role="menuitem">Trang chủ</a></li>
+        <li><a class="nav-link" data-nav="about" href="#about" role="menuitem">Giới thiệu</a></li>
+        <li><a class="nav-link" data-nav="projects" href="#projects" role="menuitem">Dự án</a></li>
+        <li><a class="nav-link" data-nav="contact" href="#contact" role="menuitem">Liên hệ</a></li>
+        <li style="margin-left:auto"><button class="btn btn-primary btn-sm" data-nav="cv-builder"
+            onclick="navigateTo('cv-builder')" style="font-weight:600;padding: 0.5rem 1rem">Tạo từ CV ✨</button></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="theme-toggle" title="Toggle dark/light mode"
+          aria-label="Toggle theme">🌙</button>
+        <a class="btn btn-primary btn-sm" onclick="requestDemo()" href="#contact"
+          aria-label="Yêu cầu demo trực tiếp">Yêu cầu
+          Demo</a>
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Mở menu di động" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  <!-- ════════════════════════════════════════════════════════════
+     PAGE: HOME
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-home">
+
+    <!-- Hero -->
+    <section class="hero" aria-label="Hero section">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Copy -->
+          <div class="hero-copy">
+            <div class="hero-eyebrow">
+              <span class="dot"></span> Open to Senior & Lead Roles
+            </div>
+            <h1 class="hero-title">
+              <span class="text-gradient">Data & BI Professional</span> — Architecture & Automation
+            </h1>
+            <p class="hero-sub">
+              4+ years designing scalable data architectures and analytics platforms to enable data-driven
+              decision-making in high-volume e-commerce environments.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary btn-lg" data-nav="projects" href="#projects" onclick="navigateTo('projects')">
+                View Projects ↗
+              </a>
+              <button class="btn btn-secondary btn-lg" onclick="downloadCV()">
+                Download CV ↓
+              </button>
+              <button class="btn btn-outline btn-lg" onclick="requestDemo()">
+                Request Live Demo
+              </button>
+            </div>
+            <div class="hero-stats">
+              <div class="hero-stat">
+                <div class="hero-stat-num"><span data-count="4" data-suffix="+">4+</span></div>
+                <div class="hero-stat-label">Years of Experience</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-num"><span data-count="100" data-prefix="~">~100</span></div>
+                <div class="hero-stat-label">Marketing Staff Supported via BI</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-num"><span data-count="30" data-suffix="%">30%</span></div>
+                <div class="hero-stat-label">Manual Workloads Eliminated</div>
+              </div>
+            </div>
+          </div>
+          <!-- Visual -->
+          <div class="hero-visual" aria-hidden="true">
+            <div class="hero-visual-inner">
+              <!-- Profile Picture -->
+              <div class="profile-frame">
+                <img src="assets/img/profile/AVATAR.jpg" alt="Thanh Phương" class="profile-img"
+                  onerror="this.src='https://placehold.co/400x400/060c1a/ffffff?text=TP'; this.onerror=null;">
+                <div class="profile-glow"></div>
+              </div>
+
+              <!-- Floating KPI -->
+              <div class="kpi-float" style="top: -10%; right: -5%; animation: float1 4s ease-in-out infinite">
+                <div class="kpi-float-num">↓30%</div>
+                <div class="kpi-float-label">Repetitive Work</div>
+              </div>
+              <div class="kpi-float" style="bottom: 5%; left: -10%; animation: float2 5s ease-in-out infinite">
+                <div class="kpi-float-num">↑50%</div>
+                <div class="kpi-float-label">Operational Efficiency</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Capabilities -->
+    <section class="section" aria-labelledby="capabilities-heading">
+      <div class="container">
+        <div class="text-center mb-3">
+          <div class="section-label">What I Do</div>
+          <h2 class="section-title" id="capabilities-heading">Core Capabilities</h2>
+          <p class="section-sub" style="margin:0 auto">From raw data to automated operations — I build systems, not just
+            reports.</p>
+        </div>
+        <div class="grid-4 mt-4" style="margin-top:3rem">
+          <div class="capability-card reveal">
+            <div class="cap-icon cap-icon-1">📊</div>
+            <div class="cap-title">Data & Analytics</div>
+            <p class="cap-desc">Building robust data models, Power BI DAX calculations, and SQL/R analytics to transform
+              complex operational data into actionable insights.</p>
+            <div class="cap-tags">
+              <span class="tag">Power BI</span><span class="tag">DAX</span><span class="tag">SQL</span>
+            </div>
+          </div>
+          <div class="capability-card reveal reveal-delay-1">
+            <div class="cap-icon cap-icon-2">🏗️</div>
+            <div class="cap-title">Data Systems & Architecture</div>
+            <p class="cap-desc">Designing scalable star-schema data models (7+ fact tables), operational pipelines, and
+              SharePoint-based KPI systems.</p>
+            <div class="cap-tags">
+              <span class="tag">Star Schema</span><span class="tag">SharePoint</span><span class="tag">Pipelines</span>
+            </div>
+          </div>
+          <div class="capability-card reveal reveal-delay-2">
+            <div class="cap-icon cap-icon-3">⚡</div>
+            <div class="cap-title">Automation & AI Integration</div>
+            <p class="cap-desc">Implementing workflow automation via Power Automate and Google Apps Script, while
+              proactively integrating AI tools (Gemini, ChatGPT) for efficiency.</p>
+            <div class="cap-tags">
+              <span class="tag">Power Automate</span><span class="tag">Apps Script</span><span class="tag">AI
+                Tools</span>
+            </div>
+          </div>
+          <div class="capability-card reveal reveal-delay-3">
+            <div class="cap-icon cap-icon-4">🎯</div>
+            <div class="cap-title">Business Analytics</div>
+            <p class="cap-desc">Monitoring marketing performance, executing RFM customer segmentation, and tracking
+              SKU-level product profitability.</p>
+            <div class="cap-tags">
+              <span class="tag">RFM Model</span><span class="tag">Marketing Analytics</span><span class="tag">KPI
+                Monitoring</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KPI Impact -->
+    <section class="section" style="background:var(--surface)" aria-labelledby="impact-heading">
+      <div class="container">
+        <div class="text-center mb-3">
+          <div class="section-label">Measured Impact</div>
+          <h2 class="section-title" id="impact-heading">Business Results That Matter</h2>
+          <p class="section-sub" style="margin:0 auto">Quantifiable outcomes delivered through data systems and
+            automation — not just technical achievements.
+          </p>
+        </div>
+        <div class="impact-grid mt-4" style="margin-top:3rem">
+          <div class="impact-card reveal">
+            <div class="impact-arrow" style="color:#10b981">↓</div>
+            <div class="impact-num"><span data-count="30" data-suffix="%">30%</span></div>
+            <div class="impact-desc">Repetitive Workloads Reduced</div>
+            <div class="impact-context">Standardized key operational processes including order fulfillment and pricing
+              workflows</div>
+          </div>
+          <div class="impact-card reveal reveal-delay-1">
+            <div class="impact-arrow" style="color:#10b981">↑</div>
+            <div class="impact-num"><span data-count="50" data-suffix="%">50%</span></div>
+            <div class="impact-desc">Operational Efficiency Increased</div>
+            <div class="impact-context">Resulting from automated data pipelines connecting marketing, warehouse, and
+              suppliers</div>
+          </div>
+          <div class="impact-card reveal reveal-delay-2">
+            <div class="impact-arrow" style="color:#10b981">~</div>
+            <div class="impact-num"><span data-count="100">100</span></div>
+            <div class="impact-desc">Marketing Staff Supported</div>
+            <div class="impact-context">Using scalable BI architectures and automated KPI monitoring alerts via
+              Lark/Telegram</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section class="section" aria-labelledby="featured-heading">
+      <div class="container">
+        <div class="flex-between mb-3" style="flex-wrap:wrap;gap:1rem">
+          <div>
+            <div class="section-label">Case Studies</div>
+            <h2 class="section-title" id="featured-heading">Featured Projects</h2>
+          </div>
+          <a class="btn btn-secondary" href="#projects" data-nav="projects" onclick="navigateTo('projects')"
+            style="align-self:flex-end">View All Projects →</a>
+        </div>
+        <div class="grid-3" id="featured-projects-grid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section" aria-labelledby="cta-heading">
+      <div class="container text-center">
+        <div class="section-label" style="justify-content:center">Open to New Opportunities</div>
+        <h2 id="cta-heading" style="color:#fff;margin-bottom:1rem">Building data-driven operations or automation
+          systems?</h2>
+        <p style="color:rgba(255,255,255,0.6);max-width:560px;margin:0 auto 2.5rem">If you need someone who can bridge
+          business operations and technology — and turn problems into automated solutions — let's connect.</p>
+        <div class="flex-center gap-3" style="flex-wrap:wrap">
+          <a class="btn btn-primary btn-lg" href="#contact" data-nav="contact" onclick="navigateTo('contact')">Get in
+            Touch →</a>
+          <button class="btn btn-outline btn-lg" onclick="requestDemo()">Request Live Demo</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-top">
+          <div>
+            <div class="footer-logo">Thanh Phuong</div>
+            <div class="footer-tagline">Data & BI Professional · E-commerce Operations</div>
+          </div>
+          <nav class="footer-nav" aria-label="Footer navigation">
+            <a href="#home" data-nav="home" onclick="navigateTo('home')">Home</a>
+            <a href="#about" data-nav="about" onclick="navigateTo('about')">About</a>
+            <a href="#projects" data-nav="projects" onclick="navigateTo('projects')">Projects</a>
+            <a href="#contact" data-nav="contact" onclick="navigateTo('contact')">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span>© 2026 Thanh Phương. Mọi quyền được bảo lưu.</span>
+          <div class="footer-social">
+            <a class="social-btn" href="#" title="LinkedIn" aria-label="LinkedIn">in</a>
+            <a class="social-btn" href="#" title="GitHub" aria-label="GitHub">gh</a>
+            <a class="social-btn" href="#" title="Email" aria-label="Email">✉</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div><!-- /page-home -->
+
+  <!-- ════════════════════════════════════════════════════════════
+     PAGE: ABOUT
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-about">
+    <div style="padding-top:70px">
+      <section class="section" aria-labelledby="about-heading">
+        <div class="container">
+          <div class="about-grid">
+            <!-- Left: Photo + badges -->
+            <div class="about-photo-wrap">
+              <div class="about-photo"
+                style="background-image: url('assets/img/profile/Ảnh%20giới%20thiệu.jpg'); background-size: cover; background-position: center;"
+                aria-label="Thanh Phuong Profile Photo">
+                <div style="position:absolute;bottom:1.5rem;left:1.5rem;right:1.5rem">
+                  <div
+                    style="background:rgba(0,212,255,0.1);border:1px solid rgba(0,212,255,0.2);border-radius:10px;padding:1rem;backdrop-filter:blur(10px)">
+                    <div
+                      style="font-size:.78rem;font-weight:700;color:var(--accent);letter-spacing:.08em;margin-bottom:.25rem">
+                      CURRENT STATUS</div>
+                    <div style="font-size:.92rem;font-weight:600;color:var(--text-primary)">Open to Senior Data,
+                      Automation & Ops Lead roles</div>
+                  </div>
+                </div>
+              </div>
+              <div class="about-badge-stack">
+                <span class="badge badge-accent">4+ Years Experience</span>
+                <span class="badge badge-purple">Data Architecture</span>
+                <span class="badge badge-green">E-commerce Operations</span>
+              </div>
+              <div class="card mt-3" style="margin-top:1.5rem">
+                <div class="section-label" style="margin-bottom:.75rem">Technology Stack</div>
+                <div class="skills-grid" style="grid-template-columns:1fr">
+                  <div class="skill-category">
+                    <div class="skill-category-title">Data & Analytics</div>
+                    <div class="skill-pills">
+                      <span class="skill-pill">Power BI (DAX)</span><span class="skill-pill">Power Query (M)</span><span
+                        class="skill-pill">SQL</span><span class="skill-pill">R</span><span class="skill-pill">Excel
+                        VBA</span>
+                    </div>
+                  </div>
+                  <div class="skill-category" style="margin-top:.75rem">
+                    <div class="skill-category-title">Systems & Architecture</div>
+                    <div class="skill-pills">
+                      <span class="skill-pill">Star Schema</span><span class="skill-pill">SharePoint
+                        Databases</span><span class="skill-pill">KPI System Design</span><span class="skill-pill">Data
+                        Pipelines</span>
+                    </div>
+                  </div>
+                  <div class="skill-category" style="margin-top:.75rem">
+                    <div class="skill-category-title">Automation & AI</div>
+                    <div class="skill-pills">
+                      <span class="skill-pill">Power Automate</span><span class="skill-pill">Lark/Telegram
+                        AI</span><span class="skill-pill">Gemini</span><span class="skill-pill">Antigravity</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Right: Bio + Timeline -->
+            <div class="about-content">
+              <div class="section-label">About Me</div>
+              <h1 id="about-heading" style="margin-bottom:1.25rem">Transforming complex operational data into actionable
+                insights.</h1>
+              <p style="margin-bottom:1rem">I am a Data & Business Intelligence professional with 4+ years of experience
+                designing scalable data architectures and analytics platforms that enable data-driven decision-making in
+                high-volume e-commerce environments.</p>
+              <p style="margin-bottom:1rem">I have proven experience implementing BI systems for large-scale operations,
+                supporting nearly 100 marketing staff in monitoring campaign performance, product profitability, and
+                operational KPIs.</p>
+              <p style="margin-bottom:1rem">My focus is on data architecture design, data pipeline development, and
+                workflow automation. I act as a bridge between marketing, warehouse, and suppliers by implementing
+                standardized KPIs.</p>
+              <p>I am a fast learner with strong adaptability to new technologies, proactively applying AI tools (like
+                ChatGPT, Gemini, and Antigravity) and automation to optimize operational efficiency and data
+                infrastructure.</p>
+
+              <div class="divider" style="margin:1.5rem 0"></div>
+              <h3 style="margin-bottom:1.5rem">Professional Experience</h3>
+              <div class="timeline">
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="timeline-date">2024 — Present</div>
+                    <div class="timeline-title">Operations Team Lead (Data & BI)</div>
+                    <div class="timeline-company">E-commerce Company · Hanoi, Vietnam</div>
+                    <div class="timeline-desc">Designed a scalable BI architecture integrating POS, SharePoint, and CRM
+                      via APIs. Built star-schema models for 7,000+ daily orders and implemented automated KPI
+                      monitoring alerts.</div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="timeline-date">2022 — 2024</div>
+                    <div class="timeline-title">Business Intelligence Analyst</div>
+                    <div class="timeline-company">KPIM · Hanoi, Vietnam</div>
+                    <div class="timeline-desc">Developed investment portfolio tools (Markowitz model, Excel VBA),
+                      structured financial data systems using SharePoint and Power Automate, and built Power BI
+                      dashboards for HR & Delivery.</div>
+                  </div>
+                </div>
+                <div class="timeline-item">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-content">
+                    <div class="timeline-date">2022 — 2023</div>
+                    <div class="timeline-title">Project Manager & Leader</div>
+                    <div class="timeline-company">AOL Project / Youth Science Summit</div>
+                    <div class="timeline-desc">Led a research team on "AI in the tourism industry." Delivered Power BI
+                      reports for a retail business handling 1,000+ daily orders with real-time updates.</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="divider" style="margin:1.5rem 0"></div>
+              <h3 style="margin-bottom:1.5rem">Working Approach</h3>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+                <div class="card" style="padding:1.25rem">
+                  <div style="font-size:1.4rem;margin-bottom:.5rem">🧭</div>
+                  <div style="font-weight:700;margin-bottom:.4rem;font-size:.95rem">Business-First Thinking</div>
+                  <p style="font-size:.85rem">Always start from the business problem, not from the tool.</p>
+                </div>
+                <div class="card" style="padding:1.25rem">
+                  <div style="font-size:1.4rem;margin-bottom:.5rem">⚙️</div>
+                  <div style="font-weight:700;margin-bottom:.4rem;font-size:.95rem">Automate Everything Repeatable</div>
+                  <p style="font-size:.85rem">If a person does it more than twice, it should be a pipeline.</p>
+                </div>
+                <div class="card" style="padding:1.25rem">
+                  <div style="font-size:1.4rem;margin-bottom:.5rem">🤖</div>
+                  <div style="font-weight:700;margin-bottom:.4rem;font-size:.95rem">AI Makes It Practical</div>
+                  <p style="font-size:.85rem">Integrate AI tools into workflows where they reduce friction — not as
+                    buzzwords.</p>
+                </div>
+                <div class="card" style="padding:1.25rem">
+                  <div style="font-size:1.4rem;margin-bottom:.5rem">📐</div>
+                  <div style="font-weight:700;margin-bottom:.4rem;font-size:.95rem">Systems over Spreadsheets</div>
+                  <p style="font-size:.85rem">Every report sits on a governed, scalable data model — not a manual
+                    export.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="footer-bottom" style="border-top:none;padding-top:0">
+          <span>© 2026 Thanh Phương.</span>
+          <a class="btn btn-primary btn-sm" href="#contact" data-nav="contact" onclick="navigateTo('contact')">Liên hệ
+            Ngay →</a>
+        </div>
+      </div>
+    </footer>
+  </div><!-- /page-about -->
+
+  <!-- ════════════════════════════════════════════════════════════
+     PAGE: PROJECTS
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-projects">
+    <div style="padding-top:70px">
+      <section class="section">
+        <div class="container">
+          <div class="section-label">Nghiên cứu Tình huống</div>
+          <h1 id="projects-heading" style="margin-bottom:.75rem">Dự án &amp; Nghiên cứu Tình huống</h1>
+          <p class="section-sub" style="margin-bottom:2.5rem">Mỗi dự án là một tài liệu nghiên cứu tình huống có cấu
+            trúc về bối cảnh, kiến trúc, giải pháp và kết quả kinh doanh đo lường được.</p>
+          <div class="filter-tabs" role="tablist" aria-label="Bộ lọc danh mục dự án">
+            <button class="filter-tab active" data-filter="all" role="tab" aria-selected="true">Tất cả Dự án</button>
+            <button class="filter-tab" data-filter="bi" role="tab">Hệ thống BI</button>
+            <button class="filter-tab" data-filter="automation" role="tab">Tự động hóa &amp; Quy trình</button>
+            <button class="filter-tab" data-filter="cost" role="tab">Mô hình hóa Chi phí</button>
+            <button class="filter-tab" data-filter="architecture" role="tab">Kiến trúc Dữ liệu</button>
+          </div>
+          <div class="grid-3" id="projects-grid">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="border-top:none;padding-top:0">
+          <span>© 2026 Thanh Phương.</span>
+          <a class="btn btn-primary btn-sm" href="#contact" onclick="navigateTo('contact')">Thảo luận Dự án →</a>
+        </div>
+      </div>
+    </footer>
+  </div><!-- /page-projects -->
+
+  <!-- ════════════════════════════════════════════════════════════
+     PAGE: CONTACT
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-contact">
+    <div style="padding-top:70px">
+      <section class="section">
+        <div class="container">
+          <div class="text-center mb-3" style="margin-bottom:3rem">
+            <div class="section-label">Hãy Trò chuyện</div>
+            <h1 style="margin-bottom:.75rem">Liên hệ với Tôi</h1>
+            <p class="section-sub" style="margin:0 auto">Bạn quan tâm đến việc hợp tác, một vai trò mở, hoặc một bản
+              demo trực tiếp của dự án? Tôi rất mong được nghe từ bạn.</p>
+          </div>
+          <div class="contact-grid">
+            <!-- Form -->
+            <div class="contact-form">
+              <h3 style="margin-bottom:1.5rem">Gửi Tin nhắn</h3>
+              <form action="https://formspree.io/f/xnjgaond" method="POST" id="contact-form">
+                <div class="grid-2" style="gap:1rem">
+                  <div class="form-group">
+                    <label class="form-label" for="first-name">Tên</label>
+                    <input class="form-input" id="first-name" type="text" placeholder="Thanh" required />
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="last-name">Họ</label>
+                    <input class="form-input" id="last-name" type="text" placeholder="Nguyễn" required />
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="email">Địa chỉ Email</label>
+                  <input class="form-input" id="email" type="email" placeholder="thanh@congty.com" required />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="company">Công ty / Tổ chức</label>
+                  <input class="form-input" id="company" type="text" placeholder="Công ty ABC" />
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="inquiry-type">Loại Yêu cầu</label>
+                  <select class="form-select" id="inquiry-type">
+                    <option value="" disabled selected>Chọn loại yêu cầu...</option>
+                    <option value="Vai trò Toàn thời gian / Hợp đồng">Vai trò Toàn thời gian / Hợp đồng</option>
+                    <option value="Yêu cầu Demo Trực tiếp">Yêu cầu Demo Trực tiếp</option>
+                    <option value="Dịch vụ Tư vấn">Dịch vụ Tư vấn</option>
+                    <option value="Hợp tác / Hội tác">Hợp tác / Hội tác</option>
+                    <option value="Khác">Khác</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="message">Tin nhắn</label>
+                  <textarea class="form-textarea" id="message"
+                    placeholder="Hãy cho tôi biết về các thách thức dữ liệu, vai trò hoặc điều gì bạn muốn thảo luận..."
+                    required></textarea>
+                </div>
+                <button class="btn btn-primary" id="contact-submit" type="submit"
+                  style="width:100%;justify-content:center">Gửi Tin nhắn →</button>
+              </form>
+            </div>
+            <!-- Info -->
+            <div>
+              <h3 style="margin-bottom:1.5rem">Thông tin Liên hệ</h3>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">✉️</div>
+                <div>
+                  <div class="contact-info-label">Email</div>
+                  <div class="contact-info-value">thanhphuong.network@gmail.com</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">📞</div>
+                <div>
+                  <div class="contact-info-label">Điện thoại</div>
+                  <div class="contact-info-value">(+84) 382002753</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">💼</div>
+                <div>
+                  <div class="contact-info-label">LinkedIn</div>
+                  <div class="contact-info-value">Thanh Phương</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">📍</div>
+                <div>
+                  <div class="contact-info-label">Vị trí</div>
+                  <div class="contact-info-value">Hà Nội, Việt Nam & Work from home</div>
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <div class="contact-info-icon">⏱️</div>
+                <div>
+                  <div class="contact-info-label">Thời gian Phản hồi</div>
+                  <div class="contact-info-value">Trong vòng 24 giờ</div>
+                </div>
+              </div>
+              <div class="card mt-4"
+                style="margin-top:2rem;background:linear-gradient(135deg,rgba(0,212,255,.06),rgba(124,92,252,.06));border-color:rgba(0,212,255,.15)">
+                <div style="font-size:1.2rem;margin-bottom:.75rem">🎯</div>
+                <h4 style="margin-bottom:.5rem">Các vai trò Quan tâm</h4>
+                <ul
+                  style="font-size:.9rem;color:var(--text-secondary);line-height:2;padding-left:1.2rem;list-style:disc">
+                  <li>Trưởng nhóm BI / Trưởng phòng Phân tích</li>
+                  <li>Quản lý Dữ liệu / Quản lý Chuyển đổi</li>
+                  <li>Consultant</li>
+                  <li>Executive Assistant</li>
+                </ul>
+              </div>
+              <div class="card" style="margin-top:1rem">
+                <h4 style="margin-bottom:.75rem">Yêu cầu Demo Trực tiếp</h4>
+                <p style="font-size:.88rem;margin-bottom:1rem">Tôi có thể dạo quanh các bảng điều khiển dự án được chọn
+                  trong một phiên chia sẻ màn hình. Không có dữ liệu nào được công khai.</p>
+                <button class="btn btn-outline" style="width:100%;justify-content:center"
+                  onclick="document.getElementById('inquiry-type').value='live-demo'">Yêu cầu Truy cập Demo →</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-bottom" style="border-top:none;padding-top:0">
+          <span>© 2026 Thanh Phương.</span>
+        </div>
+      </div>
+    </footer>
+  </div><!-- /page-contact -->
+
+  <!-- ── CV Builder Page ────────────────────────────────────── -->
+  <div class="page" id="page-cv-builder">
+    <section class="section">
+      <div class="container" style="max-width: 800px;">
+        <div class="text-center mb-3">
+          <div class="section-label">AI Portfolio Builder</div>
+          <h1>Xây dựng từ CV của bạn</h1>
+          <p class="section-sub">Dán nội dung CV dạng văn bản vào ô dưới đây. Tôi sẽ tạo một phiên bản portfolio mới dựa
+            trên nội dung bạn cung cấp.</p>
+        </div>
+
+        <div class="card"
+          style="padding: 2rem; background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(0, 212, 255, 0.1);">
+          <div class="form-group">
+            <label class="form-label" for="cv-content">Nội dung CV (Dạng văn bản)</label>
+            <textarea class="form-textarea" id="cv-content"
+              style="min-height: 400px; font-family: 'Inter', sans-serif; line-height: 1.6; font-size: 0.95rem; background: rgba(0,0,0,0.2); color: white; border: 1px solid rgba(255,255,255,0.1); border-radius: 8px; padding: 1rem; width: 100%;"
+              placeholder="Dán CV mới của bạn ở đây..."></textarea>
+          </div>
+          <div style="margin-top: 2rem;">
+            <button class="btn btn-primary" id="btn-transform-cv"
+              style="width: 100%; justify-content: center; font-size: 1.1rem; padding: 1rem;">
+              Tạo phiên bản Portfolio mới ✨
+            </button>
+            <p style="text-align: center; font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
+              Sau khi nhấn nút, mỗi CV sẽ được tạo thành một đường link riêng biệt để bạn dễ dàng quản lý.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════
+     PROJECT DETAIL: Inventory Intelligence (Featured)
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="project-inventory-intelligence">
+    <section class="project-hero">
+      <div class="container project-hero-content">
+        <button class="back-btn" onclick="goBack()" aria-label="Quay lại danh sách dự án">← Quay lại danh sách dự
+          án</button>
+        <div class="breadcrumb" style="margin-top:.5rem">
+          <a href="#projects" onclick="navigateTo('projects')">Dự án</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current">Hệ thống Thông minh Tồn kho</span>
+        </div>
+        <div style="display:flex;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap">
+          <span class="featured-banner">⭐ Dự án Nổi bật</span>
+          <span class="badge badge-accent">Hệ thống BI</span>
+        </div>
+        <h1 style="color:#fff;max-width:700px;margin-bottom:1rem">Hệ thống Thông minh Tồn kho Bán lẻ</h1>
+        <p style="color:rgba(255,255,255,.7);max-width:640px;font-size:1.1rem;margin-bottom:2rem">Một giải pháp Power BI
+          toàn diện tích hợp ERP, POS và dữ liệu nhà cung cấp để xác định và giảm lượng hàng tồn kho chậm luân chuyển,
+          mang lại mức giảm 27% lượng hàng chết trên 6 chi nhánh bán lẻ.</p>
+        <div style="display:flex;gap:2rem;flex-wrap:wrap">
+          <div>
+            <div
+              style="font-size:.75rem;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.25rem">
+              Ngành</div>
+            <div style="color:#fff;font-weight:600">Bán lẻ &amp; Phân phối</div>
+          </div>
+          <div>
+            <div
+              style="font-size:.75rem;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.25rem">
+              Thời gian</div>
+            <div style="color:#fff;font-weight:600">14 Tuần</div>
+          </div>
+          <div>
+            <div
+              style="font-size:.75rem;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.25rem">
+              Quy mô Đội ngũ</div>
+            <div style="color:#fff;font-weight:600">Kiến trúc sư Độc lập</div>
+          </div>
+          <div>
+            <div
+              style="font-size:.75rem;font-weight:600;color:rgba(255,255,255,.4);letter-spacing:.08em;text-transform:uppercase;margin-bottom:.25rem">
+              Vai trò</div>
+            <div style="color:#fff;font-weight:600">Kiến trúc sư BI Trưởng</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-sm">
+      <div class="container">
+        <div class="project-layout">
+          <!-- Main Content -->
+          <div class="project-main">
+
+            <!-- 1. Business Context -->
+            <div class="project-section reveal" id="ps-context">
+              <div class="project-section-title">
+                <div class="icon">🏢</div>
+                <h2>Bối cảnh Kinh doanh</h2>
+              </div>
+              <p>Một doanh nghiệp bán lẻ và bán buôn nhiều chi nhánh với hơn 2.000 SKU đang hoạt động gặp phải một vấn
+                đề ngày càng lớn: lượng vốn đáng kể bị kẹt trong hàng tồn kho chậm luân chuyển và dư thừa. Nhân viên mua
+                hàng đưa ra quyết định bổ sung hàng hóa dựa trên cảm tính và các file Excel không đồng nhất, không có
+                cái nhìn tổng quan về tình trạng tồn kho trên toàn bộ mạng lưới các chi nhánh.</p>
+              <p style="margin-top:1rem">Tổ chức sử dụng một hệ thống ERP cũ (Dynamics NAV) và phần mềm POS riêng biệt
+                cho mỗi chi nhánh — không có sự tích hợp dữ liệu. Ban điều hành cần một bảng điều khiển duy nhất làm
+                nguồn dữ liệu đáng tin cậy để đưa ra các quyết định tồn kho dựa trên dữ liệu trên toàn bộ mạng lưới chi
+                nhánh.</p>
+            </div>
+
+            <!-- 2. Problem Statement -->
+            <div class="project-section reveal" id="ps-problem">
+              <div class="project-section-title">
+                <div class="icon">⚠️</div>
+                <h2>Phát biểu Vấn đề</h2>
+              </div>
+              <div class="quote-block">"Chúng ta không biết được sản phẩm nào đang giết chết dòng tiền của mình cho đến
+                khi đã quá muộn. Mỗi người mua hàng làm việc dựa trên một bảng tính khác nhau và không ai công nhận số
+                liệu của nhau."</div>
+              <ul
+                style="list-style:disc;padding-left:1.5rem;color:var(--text-secondary);line-height:2.2;font-size:.95rem">
+                <li>Không có khả năng theo dõi biến động hàng tồn kho theo thời gian thực trên 6 chi nhánh</li>
+                <li>Báo cáo hàng tồn kho mất 3 ngày để làm thủ công mỗi tuần</li>
+                <li>Lượng hàng chết đã tăng 34% trong vòng 18 tháng qua mà không có biện pháp can thiệp nào</li>
+                <li>Người mua hàng không có các chỉ số chỉ báo sớm — chỉ có các báo cáo chậm trễ của tháng</li>
+                <li>Không có định nghĩa nhất quán cho từ "chậm luân chuyển" trên toàn doanh nghiệp</li>
+              </ul>
+            </div>
+
+            <!-- 3. Data Architecture -->
+            <div class="project-section reveal" id="ps-architecture">
+              <div class="project-section-title">
+                <div class="icon">🏗️</div>
+                <h2>Kiến trúc Dữ liệu</h2>
+              </div>
+              <p style="margin-bottom:1.5rem">Đã thiết kế một mô hình dữ liệu dạng sao (star-schema) trong Power BI với
+                một lớp ngữ nghĩa duy nhất liên kết với 3 hệ thống nguồn. Tất cả các bước chuyển đổi dữ liệu được thực
+                thi qua Power Query với mã M đã được lập tài liệu, tạo thành quy trình ETL có thể được kiểm chứng và lặp
+                lại.</p>
+
+              <h4
+                style="margin-bottom:.75rem;color:var(--text-secondary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase">
+                FACT TABLES</h4>
+              <div class="data-arch-table" style="margin-bottom:1.5rem">
+                <div class="data-arch-table-header">Fact_SalesTransactions</div>
+                <div class="data-arch-table-row"><code>transaction_id</code><span class="field-type">INT PK</span><span
+                    class="field-desc">Unique sale record identifier</span></div>
+                <div class="data-arch-table-row"><code>date_key</code><span class="field-type">INT FK</span><span
+                    class="field-desc">Links to Dim_Date</span></div>
+                <div class="data-arch-table-row"><code>product_key</code><span class="field-type">INT FK</span><span
+                    class="field-desc">Links to Dim_Product</span></div>
+                <div class="data-arch-table-row"><code>branch_key</code><span class="field-type">INT FK</span><span
+                    class="field-desc">Links to Dim_Branch</span></div>
+                <div class="data-arch-table-row"><code>quantity_sold</code><span class="field-type">DECIMAL</span><span
+                    class="field-desc">Units sold in transaction</span></div>
+                <div class="data-arch-table-row"><code>unit_cost</code><span class="field-type">DECIMAL</span><span
+                    class="field-desc">Landed cost at time of sale</span></div>
+                <div class="data-arch-table-row"><code>gross_profit</code><span class="field-type">DECIMAL</span><span
+                    class="field-desc">Calculated: revenue – cost</span></div>
+              </div>
+              <div class="data-arch-table" style="margin-bottom:1.5rem">
+                <div class="data-arch-table-header">Fact_StockSnapshot (Daily)</div>
+                <div class="data-arch-table-row"><code>snapshot_date</code><span class="field-type">DATE</span><span
+                    class="field-desc">Daily stock level capture</span></div>
+                <div class="data-arch-table-row"><code>product_key</code><span class="field-type">INT FK</span><span
+                    class="field-desc">Links to Dim_Product</span></div>
+                <div class="data-arch-table-row"><code>branch_key</code><span class="field-type">INT FK</span><span
+                    class="field-desc">Links to Dim_Branch</span></div>
+                <div class="data-arch-table-row"><code>qty_on_hand</code><span class="field-type">DECIMAL</span><span
+                    class="field-desc">Physical stock level</span></div>
+                <div class="data-arch-table-row"><code>days_cover</code><span class="field-type">INT</span><span
+                    class="field-desc">Calculated weeks of stock remaining</span></div>
+                <div class="data-arch-table-row"><code>slow_move_flag</code><span class="field-type">BIT</span><span
+                    class="field-desc">1 = No sales in last 60 days AND &gt;4 weeks cover</span></div>
+              </div>
+
+              <h4
+                style="margin-bottom:.75rem;color:var(--text-secondary);font-size:.85rem;letter-spacing:.06em;text-transform:uppercase">
+                DIMENSION TABLES</h4>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+                <div class="data-arch-table">
+                  <div class="data-arch-table-header">Dim_Product</div>
+                  <div class="data-arch-table-row"><code>product_key</code><span class="field-type">INT PK</span></div>
+                  <div class="data-arch-table-row"><code>sku</code><span class="field-type">NVARCHAR</span></div>
+                  <div class="data-arch-table-row"><code>category</code><span class="field-type">NVARCHAR</span></div>
+                  <div class="data-arch-table-row"><code>supplier_key</code><span class="field-type">INT FK</span></div>
+                  <div class="data-arch-table-row"><code>reorder_point</code><span class="field-type">DECIMAL</span>
+                  </div>
+                </div>
+                <div class="data-arch-table">
+                  <div class="data-arch-table-header">Dim_Date</div>
+                  <div class="data-arch-table-row"><code>date_key</code><span class="field-type">INT PK</span></div>
+                  <div class="data-arch-table-row"><code>date</code><span class="field-type">DATE</span></div>
+                  <div class="data-arch-table-row"><code>week_num</code><span class="field-type">INT</span></div>
+                  <div class="data-arch-table-row"><code>fiscal_period</code><span class="field-type">NVARCHAR</span>
+                  </div>
+                  <div class="data-arch-table-row"><code>is_trading_day</code><span class="field-type">BIT</span></div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 4. Solution Design -->
+            <div class="project-section reveal" id="ps-solution">
+              <div class="project-section-title">
+                <div class="icon">🔧</div>
+                <h2>Thiết kế Giải pháp</h2>
+              </div>
+              <p style="margin-bottom:1.25rem">Giải pháp là một kiến trúc 3 lớp: một đường ống ETL tự động nạp dữ liệu
+                vào một mô hình ngữ nghĩa đã được xác thực, xuất ra một bộ báo cáo Power BI được quản lý để người mua
+                hàng, giám đốc chi nhánh và giám đốc thương mại sử dụng.</p>
+              <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1rem">
+                <div class="card" style="padding:1.25rem;text-align:center">
+                  <div style="font-size:1.5rem;margin-bottom:.5rem">📥</div>
+                  <div style="font-weight:700;font-size:.92rem;margin-bottom:.4rem">Lớp 1: Thu thập Dữ liệu</div>
+                  <p style="font-size:.82rem">Power Query kết nối với nguồn OData của ERP + file CSV xuất từ POS thông
+                    qua SharePoint
+                  </p>
+                </div>
+                <div class="card" style="padding:1.25rem;text-align:center">
+                  <div style="font-size:1.5rem;margin-bottom:.5rem">⭐</div>
+                  <div style="font-weight:700;font-size:.92rem;margin-bottom:.4rem">Lớp 2: Mô hình Dữ liệu</div>
+                  <p style="font-size:.82rem">Lược đồ sao với các bảng được chứng nhận, bảo mật cấp hàng, và thư viện đo
+                    lường dùng chung</p>
+                </div>
+                <div class="card" style="padding:1.25rem;text-align:center">
+                  <div style="font-size:1.5rem;margin-bottom:.5rem">📊</div>
+                  <div style="font-weight:700;font-size:.92rem;margin-bottom:.4rem">Lớp 3: Báo cáo</div>
+                  <p style="font-size:.82rem">5 trang báo cáo — Quản trị, Mua hàng, Chi nhánh, Chi tiết SKU, và Danh
+                    sách Hành động</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- 5. Tools Used -->
+            <div class="project-section reveal" id="ps-tools">
+              <div class="project-section-title">
+                <div class="icon">🛠️</div>
+                <h2>Công cụ Sử dụng</h2>
+              </div>
+              <div class="tools-grid">
+                <div class="tool-badge"><span class="icon">📊</span> Power BI Desktop</div>
+                <div class="tool-badge"><span class="icon">⚙️</span> Power Query (M)</div>
+                <div class="tool-badge"><span class="icon">🧮</span> DAX</div>
+                <div class="tool-badge"><span class="icon">🗄️</span> SQL Server</div>
+                <div class="tool-badge"><span class="icon">☁️</span> SharePoint Online</div>
+                <div class="tool-badge"><span class="icon">🤖</span> Power Automate</div>
+                <div class="tool-badge"><span class="icon">📦</span> Dynamics NAV (ERP)</div>
+                <div class="tool-badge"><span class="icon">🔑</span> RLS (Bảo mật Cấp hàng)</div>
+              </div>
+            </div>
+
+            <!-- 6. Process Flow -->
+            <div class="project-section reveal" id="ps-process">
+              <div class="project-section-title">
+                <div class="icon">🔄</div>
+                <h2>Luồng Tự động hóa</h2>
+              </div>
+              <p style="margin-bottom:1.5rem">The entire pipeline runs unattended every morning at 06:00. Buyers arrive
+                to a refreshed dashboard with the previous day's data — no manual intervention required.</p>
+              <div class="process-flow">
+                <div class="flow-step">
+                  <div class="flow-step-icon">🕕</div>
+                  <div class="flow-step-title">06:00 Kích hoạt</div>
+                  <div class="flow-step-desc">Power Automate luồng đã lên lịch khởi chạy</div>
+                </div>
+                <div class="flow-step">
+                  <div class="flow-step-icon">📤</div>
+                  <div class="flow-step-title">Xuất ERP</div>
+                  <div class="flow-step-desc">NAV OData API lấy các giao dịch 24h qua</div>
+                </div>
+                <div class="flow-step">
+                  <div class="flow-step-icon">📁</div>
+                  <div class="flow-step-title">Đồng bộ POS</div>
+                  <div class="flow-step-desc">CSVs chi nhánh đẩy vào thư mục SharePoint</div>
+                </div>
+                <div class="flow-step">
+                  <div class="flow-step-icon">⚙️</div>
+                  <div class="flow-step-title">ETL / Biến đổi</div>
+                  <div class="flow-step-desc">Power Query áp dụng làm sạch &amp; gộp dữ liệu</div>
+                </div>
+                <div class="flow-step">
+                  <div class="flow-step-icon">📊</div>
+                  <div class="flow-step-title">Làm mới Mô hình</div>
+                  <div class="flow-step-desc">Power BI dataset làm mới, KPIs cập nhật</div>
+                </div>
+                <div class="flow-step">
+                  <div class="flow-step-icon">📩</div>
+                  <div class="flow-step-title">Gửi Cảnh báo</div>
+                  <div class="flow-step-desc">Cảnh báo chậm luân chuyển được gửi email trước 07:30</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 7. Dashboard Showcase -->
+            <div class="project-section reveal" id="ps-dashboard">
+              <div class="project-section-title">
+                <div class="icon">📈</div>
+                <h2>Trưng bày Bảng điều khiển</h2>
+              </div>
+              <p style="margin-bottom:1.25rem">Bộ báo cáo bao gồm 5 chế độ xem tập trung được thiết kế cho các cá nhân
+                khác nhau — từ tóm tắt dành cho ban điều hành cho đến chi tiết từng SKU (drill-through).</p>
+              <div class="dashboard-frame">
+                <div class="dashboard-frame-header">
+                  <div class="dashboard-frame-dots"><span></span><span></span><span></span></div>
+                  <div class="dashboard-frame-url">powerbi.com/report — Thông minh Tồn kho · Quản trị</div>
+                </div>
+                <div class="dashboard-frame-body">
+                  <div class="pbi-dashboard">
+                    <div class="pbi-widget">
+                      <div class="pbi-widget-title">Tổng SKU Chậm Luân Chuyển</div>
+                      <div class="pbi-widget-value">147</div>
+                      <div class="pbi-widget-change change-down">↓ 27% so với quý trước</div>
+                      <div class="bar-chart" style="margin-top:.75rem">
+                        <div class="bar bar-1" style="height:70%"></div>
+                        <div class="bar bar-2" style="height:85%"></div>
+                        <div class="bar bar-1" style="height:60%"></div>
+                        <div class="bar bar-2" style="height:50%"></div>
+                        <div class="bar bar-1" style="height:40%"></div>
+                        <div class="bar bar-2" style="height:35%"></div>
+                      </div>
+                    </div>
+                    <div class="pbi-widget">
+                      <div class="pbi-widget-title">Vốn gặp Rủi ro</div>
+                      <div class="pbi-widget-value">£184K</div>
+                      <div class="pbi-widget-change change-down">↓ £62K so với tháng trước</div>
+                      <div class="bar-chart" style="margin-top:.75rem">
+                        <div class="bar bar-2" style="height:90%"></div>
+                        <div class="bar bar-1" style="height:75%"></div>
+                        <div class="bar bar-2" style="height:65%"></div>
+                        <div class="bar bar-1" style="height:55%"></div>
+                        <div class="bar bar-2" style="height:45%"></div>
+                        <div class="bar bar-1" style="height:40%"></div>
+                      </div>
+                    </div>
+                    <div class="pbi-widget">
+                      <div class="pbi-widget-title">Số Ngày Đảm Bảo Trung Bình</div>
+                      <div class="pbi-widget-value">38 Ngày</div>
+                      <div class="pbi-widget-change change-up">↑ Mức khỏe mạnh: &lt;60 Ngày</div>
+                      <div class="bar-chart" style="margin-top:.75rem">
+                        <div class="bar bar-1" style="height:40%"></div>
+                        <div class="bar bar-2" style="height:50%"></div>
+                        <div class="bar bar-1" style="height:60%"></div>
+                        <div class="bar bar-2" style="height:70%"></div>
+                        <div class="bar bar-1" style="height:65%"></div>
+                        <div class="bar bar-2" style="height:58%"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    style="margin-top:1rem;padding:1rem;background:var(--surface);border-radius:var(--radius);font-size:.82rem;color:var(--text-muted);text-align:center">
+                    📊 Xem trước: Dữ liệu ẩn danh được hiển thị dưới dạng minh họa. Tất cả các giá trị đều mang tính đại
+                    diện cho kết quả dự án.
+                  </div>
+                </div>
+              </div>
+              <div class="access-notice">
+                <span class="icon">🔒</span>
+                <div><strong>Quyền truy cập trực tiếp Power BI có sẵn theo yêu cầu.</strong> Tôi có thể dẫn dắt đi qua
+                  bộ báo cáo đầy đủ bao gồm drill-through, RLS, và DAX các công cụ đo lường trong một phiên chia sẻ màn
+                  hình riêng tư. Không có dữ liệu thực nào được tiếp xúc công khai.</div>
+              </div>
+            </div>
+
+            <!-- 8. Business Impact -->
+            <div class="project-section reveal" id="ps-impact">
+              <div class="project-section-title">
+                <div class="icon">💡</div>
+                <h2>Tác động Doanh nghiệp</h2>
+              </div>
+              <div class="impact-highlight">
+                <h3 style="margin-bottom:.5rem">Kết quả sau 3 tháng triển khai</h3>
+                <p style="font-size:.9rem">Đo lường so với số liệu đường cơ sở trước khi triển khai bằng cách sử dụng dữ
+                  liệu ERP và sự phê duyệt của Giám đốc Tài chính.</p>
+                <div class="impact-highlight-grid">
+                  <div class="impact-highlight-item">
+                    <div class="impact-highlight-num text-gradient">↓27%</div>
+                    <div class="impact-highlight-desc">Khối lượng tồn kho chậm tại tất cả các chi nhánh</div>
+                  </div>
+                  <div class="impact-highlight-item">
+                    <div class="impact-highlight-num text-gradient">3ngày→0</div>
+                    <div class="impact-highlight-desc">Thời gian sản xuất báo cáo hàng tuần bị loại bỏ</div>
+                  </div>
+                  <div class="impact-highlight-item">
+                    <div class="impact-highlight-num text-gradient">£62K</div>
+                    <div class="impact-highlight-desc">Mở khóa nguồn vốn từ tồn kho chết</div>
+                  </div>
+                  <div class="impact-highlight-item">
+                    <div class="impact-highlight-num text-gradient">6→1</div>
+                    <div class="impact-highlight-desc">Các chi nhánh hiện có chung một nguồn sự thật duy nhất</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- 9. Lessons & Improvements -->
+            <div class="project-section reveal" id="ps-lessons">
+              <div class="project-section-title">
+                <div class="icon">📚</div>
+                <h2>Bài học &amp; Cải tiến</h2>
+              </div>
+              <div class="lesson-item">
+                <div class="lesson-icon">✅</div>
+                <div>
+                  <div class="lesson-title">Định nghĩa "chậm luân chuyển" một cách cộng tác ngay từ đầu</div>
+                  <div class="lesson-text">Doanh nghiệp đã có sẵn 4 định nghĩa khác nhau. Việc thống nhất trên một chỉ
+                    số trước khi xây dựng đã giúp tiết kiệm 3 tuần làm lại. Cập nhật này nay đã có một quy tắc kinh
+                    doanh được lập tài liệu trong lớp ngữ nghĩa.</div>
+                </div>
+              </div>
+              <div class="lesson-item">
+                <div class="lesson-icon">⚠️</div>
+                <div>
+                  <div class="lesson-title">Chất lượng Dữ liệu POS là con đường rủi ro cốt lõi</div>
+                  <div class="lesson-text">Các file CSV của chi nhánh có inconding, định dạng ngày giờ và mã sản phẩm
+                    không nhất quán. Xây dựng lớp xác minh tính đúng đắn trong Power Query nhằm định cờ những điểm bất
+                    thường trước khi nạp chúng vào mô hình.</div>
+                </div>
+              </div>
+              <div class="lesson-item">
+                <div class="lesson-icon">🚀</div>
+                <div>
+                  <div class="lesson-title">Cải tiến tiếp theo: Dự báo tái thiết đặt hàng bằng Máy Học</div>
+                  <div class="lesson-text">Giai đoạn 2 sẽ thêm một lớp mô hình dự báo nhu cầu bằng Python (Prophet hoặc
+                    ARIMA) vào đường ống hiện tại, thay thế các mốc tái đặt tĩnh bằng các dự báo linh hoạt.</div>
+                </div>
+              </div>
+              <div class="lesson-item">
+                <div class="lesson-icon">💡</div>
+                <div>
+                  <div class="lesson-title">Việc triển khai qua đào tạo nhúng giúp ứng dụng nhanh hơn</div>
+                  <div class="lesson-text">Đã xây dựng các Video giới thiệu siêu ngắn trực tiếp vào trong báo cáo qua
+                    các tooltips (ô hướng dẫn). Mức độ ứng dụng của phía người mua đạt 100% trong 2 tuần so với tiêu
+                    chuẩn chu kỳ thông thường là 6 tuần.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <!-- TOC Sidebar -->
+          <aside>
+            <nav class="project-toc" aria-label="Mục lục Dự án">
+              <div class="toc-title">Trên Trang này</div>
+              <a class="toc-link active" href="#ps-context">Bối cảnh Doanh nghiệp</a>
+              <a class="toc-link" href="#ps-problem">Phát biểu Vấn đề</a>
+              <a class="toc-link" href="#ps-architecture">Kiến trúc Dữ liệu</a>
+              <a class="toc-link" href="#ps-solution">Thiết kế Giải pháp</a>
+              <a class="toc-link" href="#ps-tools">Công cụ Sử dụng</a>
+              <a class="toc-link" href="#ps-process">Luồng Tự động hóa</a>
+              <a class="toc-link" href="#ps-dashboard">Trưng bày Bảng điều khiển</a>
+              <a class="toc-link" href="#ps-impact">Tác động Doanh nghiệp</a>
+              <a class="toc-link" href="#ps-lessons">Bài học &amp; Cải tiến</a>
+              <div style="margin-top:1.5rem;padding-top:1.5rem;border-top:1px solid var(--border)">
+                <button class="btn btn-primary btn-sm" onclick="requestDemo()"
+                  style="width:100%;justify-content:center">Yêu cầu Demo Trực tiếp</button>
+              </div>
+            </nav>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </div><!-- /project-inventory-intelligence -->
+
+  <!-- ── Toast ─────────────────────────────────────────────────── -->
+  <div class="toast" id="toast" role="alert" aria-live="polite">
+    <span class="toast-icon">✅</span>
+    <span class="toast-msg">Hoàn tất hành động.</span>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/data.js"></script>
+
+  </style>
+
+  <!-- ════════════════════════════════════════════════════════════
+     DYNAMIC PROJECT DETAIL TEMPLATE
+     ═══════════════════════════════════════════════════════════ -->
+  <div class="page" id="page-project-detail">
+    <section class="project-hero" id="detail-hero">
+      <div class="container project-hero-content">
+        <button class="back-btn" onclick="goBack()">← Quay lại danh sách dự án</button>
+        <div class="breadcrumb" style="margin-top:.5rem">
+          <a href="#projects" data-nav="projects" onclick="navigateTo('projects')">Dự án</a>
+          <span class="breadcrumb-sep">/</span>
+          <span class="breadcrumb-current" id="detail-breadcrumb">Tên Dự Án</span>
+        </div>
+        <div id="detail-tags" style="display:flex;gap:.75rem;margin-bottom:1rem;flex-wrap:wrap">
+          <!-- Tags dynamically added -->
+        </div>
+        <h1 id="detail-title" style="color:#fff;max-width:700px;margin-bottom:1rem">Tiêu đề Dự án</h1>
+        <p id="detail-desc" style="color:rgba(255,255,255,.7);max-width:640px;font-size:1.1rem;margin-bottom:2rem">
+          Mô tả dự án.
+        </p>
+        <div id="detail-meta" style="display:flex;gap:2rem;flex-wrap:wrap">
+          <!-- Meta info dynamically added -->
+        </div>
+      </div>
+    </section>
+
+    <section class="container" style="padding: 4rem 1.5rem">
+      <div class="project-grid-detail" style="display:grid;grid-template-columns:1fr 300px;gap:4rem">
+        <div class="project-main-content">
+          <h2 style="margin-bottom:1.5rem">Tổng quan Dự án</h2>
+          <div id="detail-content-long" class="reveal">
+            <!-- Long content dynamically added -->
+          </div>
+
+          <div id="detail-visuals" class="reveal" style="margin-top:3rem">
+            <h3 style="margin-bottom:1.5rem">Hình ảnh & Mô phỏng</h3>
+            <div id="detail-images" class="project-multimedia-grid">
+              <!-- Screenshots dynamically added -->
+            </div>
+
+            <div id="detail-pbi" style="display:none">
+              <h4 style="margin:2rem 0 1rem">Báo cáo Power BI Trực tiếp</h4>
+              <div class="pbi-container">
+                <iframe id="pbi-iframe" src="" frameborder="0" allowFullScreen="true"></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside class="project-sidebar">
+          <div class="sidebar-card reveal"
+            style="background:rgba(255,255,255,0.03);padding:2rem;border-radius:24px;border:1px solid rgba(255,255,255,0.05)">
+            <h3 style="margin-bottom:1.5rem;font-size:1.1rem">Tài nguyên Dự án</h3>
+            <div id="detail-resources" style="display:flex;flex-direction:column;gap:1rem">
+              <!-- Resource links dynamically added -->
+            </div>
+
+            <div class="divider" style="margin:2rem 0"></div>
+
+            <h3 style="margin-bottom:1.5rem;font-size:1.1rem">Công cụ Sử dụng</h3>
+            <div id="detail-tools" style="display:flex;flex-wrap:wrap;gap:.5rem">
+              <!-- Tools dynamically added -->
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </div>
+
+  <style>
+    /* Profile Frame Styles */
+    .profile-frame {
+      position: relative;
+      width: 320px;
+      height: 320px;
+      margin: 0 auto;
+      border-radius: 40px;
+      overflow: hidden;
+      border: 2px solid rgba(255, 255, 255, 0.1);
+      background: var(--bg-card);
+      transform: rotate(-3deg);
+      box-shadow: 0 30px 60px rgba(0, 0, 0, 0.4);
+      transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .profile-frame:hover {
+      transform: rotate(0deg) scale(1.02);
+      border-color: var(--primary);
+    }
+
+    .profile-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: grayscale(20%);
+      transition: filter 0.5s ease;
+    }
+
+    .profile-frame:hover .profile-img {
+      filter: grayscale(0%);
+    }
+
+    .profile-glow {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(124, 92, 252, 0.2), transparent);
+      pointer-events: none;
+    }
+
+    /* Dynamic Project Detail Styles */
+    .project-multimedia-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin: 2rem 0;
+    }
+
+    .project-screenshot {
+      width: 100%;
+      border-radius: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      cursor: zoom-in;
+      transition: transform 0.3s ease;
+    }
+
+    .project-screenshot:hover {
+      transform: scale(1.02);
+    }
+
+    .pbi-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      /* 16:9 Aspect Ratio */
+      height: 0;
+      overflow: hidden;
+      border-radius: 16px;
+      background: #000;
+      margin: 2rem 0;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .pbi-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .resource-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 1.5rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      color: #fff;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .resource-btn:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: var(--primary);
+      transform: translateY(-2px);
+    }
+
+    .resource-icon {
+      font-size: 1.5rem;
+    }
+  </style>
+</body>
+
+</html>
